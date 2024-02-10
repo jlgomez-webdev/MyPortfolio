@@ -1,0 +1,95 @@
+<!--Html declaration -->
+<!DOCTYPE html>
+
+<!--Html document Opened -->
+<html lang="en">
+
+    <!--Head : information about the webpage not showed in the browser, container element or paired element, requires an opening tag and a closing tag -->
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Importing fonts from Google forms, Families: Titillium Web, Varela Round -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&family=Varela+Round&display=swap" rel="stylesheet">
+
+        <!-- Linking external files  to the HTML file -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./js/scripts.js">
+        
+    </head>
+
+    <header>  
+        <div class="header_top_about">
+            <img src="./img/Logo-WebDevLauncher.png" alt="WebDev-Launcher-Logo">
+            <div class="navbar-links">
+                <a href="index.html">Home</a> 
+                <a href="about.html">About Me</a> 
+                <a href="projects.html">Projects</a> 
+                <a href="contact.html"><b>Contact</b></a>
+                <br>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        
+        <section id="title-contact">
+            <h1 id="mainTitle-contact">Let's Talk About Your Idea.</h1>
+                <p id="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta provident accusantium odio expedita reiciendis cum tempora numquam error, aliquam ullam. Autem sed distinctio numquam rem harum quidem nobis fugiat..</p>
+
+                <div class="form">
+                    <form>
+                        <label for="full-name" id="full-name">Full  Name: *</label><br>
+                        <input type="text" id="full-name" required><br>
+
+                        <label for="email" id="email">E-mail Address: *</label><br>
+                        <input type="email" id="email" required><br>
+
+                        <label for="phone-number" id="phone-number">Phone Number: *</label><br>
+                        <input type="tel" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        title="Please use the format xxx-xxx-xxxx." required><br><br>
+
+                        <label for="country">Country:</label>
+                        <select name="country" id="country">
+                            <option value="vzla">Venezuela</option>
+                            <option value="usa">United States</option>
+                            <option value="col">Colombia</option>
+                            <option value="can">Canada</option>
+                        </select><br><br>
+
+                        <textarea placeholder="Project Description..." id="projectDescription"></textarea><br>
+                        <label for="message">Message:</label><br>
+                        <textarea rows="5" cols="60" form="contactForm" id
+                        ="message"></textarea><br><br>
+                        <!--<button type="submit" onclick="validate()">Send Message</button>-->
+
+                        <button onclick="validateForm()" id="submitBtn">Submit Form</button>
+                        <span id="errorMsg"></span>
+                        </form>
+                </div>
+
+        
+    </body>
+
+    <footer>
+        <h1 id="title-footer">Let's Keep In Touch</h1>
+        <br><br>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Me</a> |
+        <a href="projects.html">Projects</a> |
+        <a href="contact.html">Contact</a> 
+        <br><br>
+            
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i>Facebook</a> | 
+        <a href="https://www.gmail.com/" target="_blank"><i class="fab fa-twitter"></i>Gmail</a> | 
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a> | 
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a> | 
+
+        <img src="./img/Logo-WebDevLauncher.png" alt="WebDev-Launcher-Logo">
+        <p>202 &copy;©All Rights Reserve. Salt Lake City, UT, USA.</p>
+    </footer>
+
+</html>
